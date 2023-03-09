@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kon Banega Crorepati - Result</title>
+</head>
+<body>
+    <h1>Kon Banega Crorepati - Result</h1>
+    {% if prize == prize_money[-1] %}
+        <p>Congratulations! You have won the jackpot of {{ prize }} rupees.</p>
+    {% elif prize > 0 %}
+        <p>You have won {{ prize }} rupees.</p>
+    {% else %}
+        <p>Sorry, you did not win any prize.</p>
+    {% endif %}
+    <p><a href="C:\Users\mohan\OneDrive\Desktop\Quiz\templates\index.html ">Play Again</a></p>
+</body>
+</html>

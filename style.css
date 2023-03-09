@@ -1,0 +1,82 @@
+/* Set the background color and font for the page */
+body {
+    font-family: Arial, sans-serif;
+    
+        background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/05/11/973604-kbc.jpg" );
+        background-repeat: no-repeat;
+        background-size: cover;
+
+  }
+  
+  /* Center the heading on the page */
+  h1 {
+    text-align: center;
+    color:cyan;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    background-color:coral;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 150px;
+  }
+  
+  /* Change the button color on hover */
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  input.container1{
+background-color: aquamarine;
+  }
+  .user{
+    color:deeppink;
+    display: block;
+    margin: 10 auto;
+    padding: 20px 30px;
+    border: none;
+    color: white;
+    font-size:25px;
+    cursor: pointer;
+  }
+  .container{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    padding:.3em .5em;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;}
+    a:link {
+  color:violet;
+  background-color: transparent;
+  text-decoration: none;
+  margin-top: 200px;
+  padding:.3em .5em;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  padding:.3em .5em;
+  background-color: transparent;
+  text-decoration: underline;
+}
+  

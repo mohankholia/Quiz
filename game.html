@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kon Banega Crorepati</title>
+  </head>
+  <body>
+    <h1>Kon Banega Crorepati</h1>
+    <form method="POST" action="{{ url_for('game') }}">
+      {% for i, question in enumerate(questions) %}
+        <h3>{{ question['question'] }}</h3>
+        {% for option in question['options'] %}
+          <input type="radio" id="question{{ i }}" name="question{{ i }}" value="{{ option }}">
+          <label for="question{{ i }}">{{ option }}</label><br>
+        {% endfor %}
+      {% endfor %}
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <p>Prize Money: {{ prize_money }}</p>
+  </body>
+</html>

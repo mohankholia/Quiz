@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>Login to Kon Banega Crorepati</h1>
+		<form action="{{ url_for('login') }}" method="POST">
+			<label for="username"><b>Username:</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+			<label for="password"><b>Password:</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+			<button type="submit">Login</button>
+			<p>{{ message }}</p>
+		</form>
+	</div>
+</body>
+</html>
